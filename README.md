@@ -1,42 +1,40 @@
+# URL Shortener Backend
 
-# URL Shortener
-
-This is a fullstack url shortening project build with reactjs and nodejs
+This is the **backend** for a URL shortening service built with **Node.js**, **Express**, and **MongoDB**.
 
 ## Description
-URL Shortener is a web application that allows users to create short and easy-to-share URLs from long and complex ones. It is built with React.js for the frontend and Node.js for the backend. It also uses MongoDB as a database service to store the URL mappings. This ui is a solution for a [Frontend Mentor challenge](https://www.frontendmentor.io/challenges). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+The backend provides a RESTful API to:
+- Create short URLs from long URLs.
+- Handle user-defined or automatically generated shortcodes.
+- Redirect short URLs to the original long URLs.
+- Collect basic analytics (click counts, timestamps, referrers, etc.).
+- Enforce link expiration based on a validity period.
 
-## Overview
+This backend is designed to be **consumed by a frontend** or tested via Postman/cURL.
 
-### Features 
-Users should be able to:
+---
 
-- View the optimal layout for the site depending on their device's screen size
-- Shorten any valid URL
-- See a list of their shortened links, even after refreshing the browser
-- Copy the shortened link to their clipboard in a single click
-- Receive an error message when the `input` is invalid
+## Features
 
-### Screenshot
+- **Shorten URLs** with optional custom shortcodes.
+- **Redirect** short URLs to their original URLs.
+- **Track usage statistics** (click counts, timestamps, referrers, location).
+- **Link expiration** support.
+- **Robust error handling** with descriptive JSON responses.
 
-![url-shortener](https://github.com/Plasticfoods/URL-Shortener/assets/109089484/42dc9e47-39c4-4636-8071-808f3e4a8833)
+---
 
-### Links
-* [Live URL](https://render-little-url.netlify.app/)
-* [Solution](https://github.com/Plasticfoods/URL-Shortener)
+## Setup
 
-## My process
+### Prerequisites
 
-### Built with
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [MongoDB](https://www.mongodb.com/) (local or Atlas)
+- npm (comes with Node.js)
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- [tailwindcss](https://tailwindcss.com/) - CSS framework
-- [React](https://reactjs.org/) - JS library
-- [Express](https://expressjs.com/) - Nodejs framework
-- [MongoDB](https://www.mongodb.com/) - NoSQL databases
- 
-## Contributing
-If you want to contribute to this project, you can report issues, suggest new features, or submit pull requests on GitHub. Please follow the code of conduct and the contribution guidelines before making any changes.
+### Installation
+
+1. Clone the repo (backend folder only):
+```bash
+git clone https://github.com/Ayush000000007/2201640100104.git
+cd 2201640100104
